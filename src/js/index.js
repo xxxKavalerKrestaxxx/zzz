@@ -30,9 +30,9 @@ servicesButton.addEventListener('click', () => {
   }
 })
 
-const buttonBurger = document.getElementById('button-burger')
-const buttonCloseBurger = document.getElementById('button-close-burger')
-const closeOpacity = document.getElementById('opacity-close')
+const buttonBurger = document.querySelector('.button-categories')
+const buttonCloseBurger = document.querySelector('.button-close-burger')
+const closeOpacity = document.querySelector('.categories-menu__opacity')
 const burgerMenu = document.querySelector('.categories-menu')
 const bossCont = document.querySelector('.mini-boss-container')
 
@@ -53,6 +53,7 @@ closeOpacity.addEventListener('click', () => {
 })
 
 const buttonMessage = document.querySelector('.button-message-need')
+const buttonMessageTwo = document.querySelector('.button-message-need-two')
 const buttonCloseMessage = document.querySelector(
   '.feedback-menu__button-close'
 )
@@ -60,6 +61,10 @@ const closedOpacity = document.querySelector('.feedback-menu__opacity')
 const feedback = document.querySelector('.feedback-menu')
 
 buttonMessage.addEventListener('click', () => {
+  feedback.classList.add('feedback-menu-unset')
+  bossCont.classList.add('posFixed')
+})
+buttonMessageTwo.addEventListener('click', () => {
   feedback.classList.add('feedback-menu-unset')
   bossCont.classList.add('posFixed')
 })
@@ -75,7 +80,8 @@ closedOpacity.addEventListener('click', () => {
   window.scrollTo({ top: 0 })
 })
 
-const buttonRequest = document.getElementById('button-call')
+const buttonRequest = document.querySelector('.button-call')
+const buttonRequestTwo = document.querySelector('.button-call-two')
 const buttonCloseRequest = document.querySelector(
   '.request-call-menu__button-close'
 )
@@ -83,6 +89,10 @@ const clossedOpacity = document.querySelector('.request-call-menu__opacity')
 const RequestCall = document.querySelector('.request-call-menu')
 
 buttonRequest.addEventListener('click', () => {
+  RequestCall.classList.add('feedback-menu-unset')
+  bossCont.classList.add('posFixed')
+})
+buttonRequestTwo.addEventListener('click', () => {
   RequestCall.classList.add('feedback-menu-unset')
   bossCont.classList.add('posFixed')
 })

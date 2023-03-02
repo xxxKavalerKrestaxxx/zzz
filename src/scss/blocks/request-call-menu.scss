@@ -1,8 +1,9 @@
 .request-call-menu {
   z-index: 3;
   width: 100%;
+  height: 100%;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 .request-call-menu__opacity {
