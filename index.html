@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
   <link href="style.css" rel="stylesheet"></head>
@@ -292,6 +291,109 @@
             </div>
             <button class="services-swiper__button-open">Показать все</button>
           </div>
+          <div class="prices">
+            <div class="prices__header">
+              <h2 class="prices__header-text">ЦЕНЫ НА УСЛУГИ</h2>
+            </div>
+            <ul class="prices__text-up">
+              <li class="text-up__element text-up__element-one">
+                Ремонтные услуги
+              </li>
+              <li class="text-up__element text-up__element-two">Цена</li>
+              <li class="text-up__element text-up__element-thee">Срок</li>
+            </ul>
+            <div class="swiper prices__swiper">
+              <div class="swiper-wrapper prices__swiper-wrapper">
+                <div class="swiper-slide prices__swiper-slide">
+                  <ul class="prices__list">
+                    <li class="prices-element elemen-number-one">
+                      <div class="elemen__text-up"> Ремонтные услуги </div>
+                      <div class="elemen__text-down">Диагностика</div>
+                    </li>
+                    <li class="prices-element">
+                      <div class="elemen__text-up">Цена</div>
+                      <div>Бесплатно</div>
+                    </li>
+                    <li class="prices-element elemen-number-two">
+                      <div class="elemen__text-up">Срок</div>
+                      <div class="elemen__text-down">30 мин</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide prices__swiper-slide">
+                  <ul class="prices__list">
+                    <li class="prices-element elemen-number-one">
+                      <div class="elemen__text-up"> Ремонтные услуги </div>
+                      <div class="elemen__text-down"> Замена дисплея </div>
+                    </li>
+                    <li class="prices-element">
+                      <div class="elemen__text-up">Цена</div>
+                      <div>1000 ₽</div>
+                    </li>
+                    <li class="prices-element elemen-number-three">
+                      <div class="elemen__text-up">Срок</div>
+                      <div class="elemen__text-down">30-120 мин</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide prices__swiper-slide">
+                  <ul class="prices__list">
+                    <li class="prices-element elemen-number-one">
+                      <div class="elemen__text-up"> Ремонтные услуги </div>
+                      <div class="elemen__text-down">
+                        Замена полифонического динамика
+                      </div>
+                    </li>
+                    <li class="prices-element">
+                      <div class="elemen__text-up">Цена</div>
+                      <div>1000 ₽</div>
+                    </li>
+                    <li class="prices-element elemen-number-three">
+                      <div class="elemen__text-up">Срок</div>
+                      <div class="elemen__text-down">30-120 мин</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide prices__swiper-slide">
+                  <ul class="prices__list">
+                    <li class="prices-element elemen-number-one">
+                      <div class="elemen__text-up"> Ремонтные услуги </div>
+                      <div class="elemen__text-down">
+                        Тестирование с выдачей технического заключения
+                      </div>
+                    </li>
+                    <li class="prices-element">
+                      <div class="elemen__text-up">Цена</div>
+                      <div>1000 ₽</div>
+                    </li>
+                    <li class="prices-element elemen-number-three">
+                      <div class="elemen__text-up">Срок</div>
+                      <div class="elemen__text-down">30-120 мин</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide prices__swiper-slide">
+                  <ul class="prices__list">
+                    <li class="prices-element elemen-number-one">
+                      <div class="elemen__text-up"> Ремонтные услуги </div>
+                      <div class="elemen__text-down">
+                        Замена программного обеспечения
+                      </div>
+                    </li>
+                    <li class="prices-element">
+                      <div class="elemen__text-up">Цена</div>
+                      <div>1000 ₽</div>
+                    </li>
+                    <li class="prices-element elemen-number-three">
+                      <div class="elemen__text-up">Срок</div>
+                      <div class="elemen__text-down">30-120 мин</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-pagination prices__swiper-pagination"></div>
+            </div>
+          </div>
           <div class="down-text">
             <div class="down-text__text">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на
@@ -324,7 +426,7 @@
         <div class="feedback">
           <button class="feedback-menu__button-close"></button>
           <h1 class="feedback-menu__header">Обратная связь</h1>
-          <form action="#" method="POST" class="feedback__form">
+          <form action="#" method="POST" class="feedback__form" onsubmit="return false">
             <input name="name" type="text" required placeholder="Имя">
             <input name="phone" type="tel" required placeholder="Телефон">
             <input name="email" type="email" required placeholder="Электронная почта">
@@ -343,7 +445,7 @@
         <div class="request-call">
           <button class="request-call-menu__button-close"></button>
           <h1 class="request-call-menu__header">Заказать звонок</h1>
-          <form action="#" method="POST" class="request-call-menu__form">
+          <form action="#" method="POST" class="request-call-menu__form" onsubmit="return false">
             <input name="phone" type="tel" required placeholder="Телефон">
             <p class="request-call-menu__paragraph">
               Нажимая “отправить”, вы даете согласие на
@@ -355,6 +457,5 @@
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
